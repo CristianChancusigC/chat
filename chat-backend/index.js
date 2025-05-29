@@ -12,6 +12,7 @@ const port = process.env.PORT || 3001;
 console.log("API Key:", process.env.GEMINI_API_KEY);
 const ai = new GoogleGenAI({ apiKey: `${process.env.GEMINI_API_KEY}` });
 // const ai = new GoogleGenAI({ apiKey: "YOUR_API_KEY" });
+//
 
 app.use(cors());
 app.use(express.json());
